@@ -1,0 +1,21 @@
+{
+    "model": {
+        "patch_size": 7, 
+        "input_channels": 200, 
+        "n_classes": 16
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "AdamW", 
+            "params": {
+                "lr": 0.001, 
+                "weight_decay": 5e-3
+            }
+        },
+        "lr_decay": {
+        
+        }
+        
+    }
+
+}

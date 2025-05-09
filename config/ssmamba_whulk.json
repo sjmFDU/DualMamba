@@ -1,0 +1,30 @@
+{
+    "model": {
+        "spa_img_size": 27,
+        "spe_img_size": 3,
+        "spa_patch_size": 3,
+        "spe_patch_size": 2,
+        "in_chans": 270, 
+        "hid_chans": 64,
+        "embed_dim": 64,
+        "nclass": 9
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "Adam", 
+            "params": {
+                "lr": 5e-4,
+                "weight_decay": 1e-4
+            }
+        },
+        "lr_decay": {
+            "name": "MultiStepLR",
+            "params": {
+                "milestones": [80, 140, 170], 
+                "last_epoch": -1,
+                "gamma": 0.5
+            }
+        }
+    }
+
+}

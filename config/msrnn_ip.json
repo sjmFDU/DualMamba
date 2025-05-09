@@ -1,0 +1,17 @@
+{
+    "model": {
+        "patch_size": 5, 
+        "input_channels": 200, 
+        "n_classes": 16
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "Adam", 
+            "params": {
+            }
+        },
+        "lr_decay": {}
+        
+    }
+
+}

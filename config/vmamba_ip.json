@@ -1,0 +1,25 @@
+{
+    "model": {
+        "patch_size": 9, 
+        "in_chans": 200, 
+        "num_classes": 16, 
+        "depths": [2, 2, 2], 
+        "dims": [128, 128, 128]
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "AdamW", 
+            "params": {
+                "lr": 0.0005
+            }
+        },
+        "lr_decay": {
+            "name": "StepLR",
+            "params": {
+                "step_size": 20, 
+                "gamma": 0.9
+            }
+        }
+    }
+
+}

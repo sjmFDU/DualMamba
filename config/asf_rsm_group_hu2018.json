@@ -1,0 +1,32 @@
+{
+    "model": {
+        "n_groups": [2],
+        "patch_size": 15, 
+        "in_chans": 48, 
+        "num_classes": 20, 
+        "depths": [1], 
+        "dims": [64],
+        "split_ratio": 0,
+        "forward_type": "v3noz",
+        "spe_branch": 1,
+        "mlp_ratio": 0,
+        "ssm_conv": 0,
+        "post_norm": 0
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "AdamW", 
+            "params": {
+                "lr": 0.001
+            }
+        },
+        "lr_decay": {
+            "name": "StepLR",
+            "params": {
+                "step_size": 20, 
+                "gamma": 0.9
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+{
+    "model": {
+        "img_size": 9, 
+        "in_chans": 200, 
+        "num_classes": 16, 
+        "n_groups": [4, 4, 4], 
+        "depths": [1, 2, 1]
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "AdamW", 
+            "params": {
+                "lr": 0.0002
+            }
+        },
+        "lr_decay": {
+            "name": "MultiStepLR",
+            "params": {
+                "milestones": [30, 60, 90, 120, 150, 180, 210, 240, 270],
+                "gamma": 0.9
+            }
+        }
+    }
+
+}

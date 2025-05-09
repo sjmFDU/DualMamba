@@ -1,0 +1,25 @@
+{
+    "model": {
+        "patch_size": 7, 
+        "in_chans": 48, 
+        "n_classes": 20
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "Adam", 
+            "params": {
+                "lr": 0.001, 
+                "weight_decay": 0.0005
+            }
+        },
+        "lr_decay": {
+            "name": "MultiStepLR",
+            "params": {
+                "milestones": [150], 
+                "gamma": 0.1
+            }
+        }
+        
+    }
+
+}

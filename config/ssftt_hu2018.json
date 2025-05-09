@@ -1,0 +1,17 @@
+{
+    "model": {
+        "n_bands": 48, 
+        "num_classes": 20
+    },
+    "schedule": {
+        "optimizer": {
+            "name": "Adam", 
+            "params": {
+                "lr": 0.001
+            }
+        },
+        "lr_decay": {}
+        
+    }
+
+}
